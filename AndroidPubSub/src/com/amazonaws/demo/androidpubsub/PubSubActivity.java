@@ -52,18 +52,18 @@ public class PubSubActivity extends Activity {
 
     // IoT endpoint
     // AWS Iot CLI describe-endpoint call returns: XXXXXXXXXX.iot.<region>.amazonaws.com
-    private static final String CUSTOMER_SPECIFIC_ENDPOINT = "CHANGE_ME";
+    private static final String CUSTOMER_SPECIFIC_ENDPOINT = "aftdzm77wxz9j-ats.iot.us-west-2.amazonaws.com";
     // Name of the AWS IoT policy to attach to a newly created certificate
-    private static final String AWS_IOT_POLICY_NAME = "CHANGE_ME";
+    private static final String AWS_IOT_POLICY_NAME = "AndroidPubSub";
 
     // Region of AWS IoT
-    private static final Regions MY_REGION = Regions.US_EAST_1;
+    private static final Regions MY_REGION = Regions.US_WEST_2;
     // Filename of KeyStore file on the filesystem
-    private static final String KEYSTORE_NAME = "iot_keystore";
+    private static final String KEYSTORE_NAME = "autopai.bks";
     // Password for the private key in the KeyStore
-    private static final String KEYSTORE_PASSWORD = "password";
+    private static final String KEYSTORE_PASSWORD = "autopai";
     // Certificate and key aliases in the KeyStore
-    private static final String CERTIFICATE_ID = "default";
+    private static final String CERTIFICATE_ID = "autopai";
 
     EditText txtSubcribe;
     EditText txtTopic;
